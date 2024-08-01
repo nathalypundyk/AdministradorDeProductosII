@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
-const routerProductos = require('./servidor/rutas/rutaProducto');
+const routerProductos = require('./rutas/rutaProducto');
 const app = express();
 
-require('./servidor/configuracion/baseDeDatos');
+require('./configuracion/baseDeDatos');
 
 // Middleware
 app.use(cors());
